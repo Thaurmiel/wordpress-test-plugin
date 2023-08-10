@@ -1,0 +1,16 @@
+{
+    "name": "thaurmiel/test-plugin",
+    "description": "Testing the capabilities of plugin",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "thaurmiel"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload":{
+        "psr-4": {"Inc\\":".include"}
+    }
+}
