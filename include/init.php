@@ -8,7 +8,7 @@ namespace Inc;
 
 use Inc\Base;
 
-class Admin
+class FAQ
 {
     function __construct()
     {
@@ -21,12 +21,12 @@ class Admin
 
     public function add_admin_pages()
     {
-        add_menu_page('Test plugin', 'Test', 'manage_options', 'test_plugin', array($this, 'admin_index'), 'dashicons-store', 110);
+        add_menu_page('Test plugin', 'How to use', 'manage_options', 'test_plugin', array($this, 'admin_index'), 'dashicons-store', 110);
     }
 
     public function admin_index()
     {
-        require_once PLUGIN_PATH . 'templates/admin.php';
+        require_once PLUGIN_PATH . 'templates/about.php';
     }
 }
 
@@ -38,7 +38,7 @@ class TestPlugin
     {
         $this->plugin_name = plugin_basename(__FILE__);
         $this->create_post_type();
-        $this->plugin_button = new Admin();
+        $this->plugin_button = new FAQ();
         
 
     }

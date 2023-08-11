@@ -7,7 +7,7 @@
 /*
 Plugin Name: Test Plugin
 Description: Exploring plugin features
-Version: 0.1.0
+Version: 0.1.1
 Author: Thaurmiel
 */
 
